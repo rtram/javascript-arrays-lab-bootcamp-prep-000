@@ -16,13 +16,13 @@ function destructivelyRemoveFirstKitten() {
   return kittens.shift()
 }
 
-function appendKitten() {
-  var newKittens = kittens.concat('Broom')
+function appendKitten(name) {
+  var newKittens = [...kittens,name]
   return newKittens
 }
 
-function prependKitten() {
-  var newKittens = ['Arnold',...kittens]
+function prependKitten(name) {
+  var newKittens = [name,...kittens]
   return newKittens
 }
 
